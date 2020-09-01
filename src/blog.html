@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>📓 Blog</title>
+</head>
+<body>
+    <div id="page_container">
+        <header>
+            <div id="scroll_header">
+                <p>Benjamin Wakefield;</p>
+            </div>
+            <p>_______________________________________</p>
+            <section class="header_section">
+                <a id="hide_button" href="javascript:void(0);" class="icon" onclick="menuHide()">
+                <i class="fa fa-bars"></i>
+                </a>
+                    <nav id="hide">
+                        <a class="even" href="index.html">Home</a>
+                        <a class="odd" href="about.html">About</a>
+                        <a class="even" href="blog.html">Blog</a>
+                        <a class="odd" href="gallery.html">Gallery</a>
+                        <a class="even" href="gamedev.html">Game Dev</a>
+                        <a class="odd" href="contact.html">Contact Me</a>                     
+                    </nav>
+            </section>  
+        </header>    
+        <div id="smallhex1">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div>
+        <div id="smallhex2">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div> 
+        <div id="smallhex3">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div> 
+        <div id="smallhex4">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div>    
+        <div id="medhex1">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div>
+        <div id="medhex2">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div> 
+        <div id="medhex3">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div> 
+        <div id="medhex4">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div>   
+        <section class="heading">
+            <h1>Blog</h1>
+        </section>
+
+        <div id="box">
+            <section class="blog_header_section">
+                <a id="hide_blog_button" href="javascript:void(0);" class="icon" onclick="menuHide2()">
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                
+            </section> 
+            <nav id="hide_blog">
+                <article class="odd">
+                    <a href="#article5">Rational Magic Systems</a>               
+                </article>
+                <article class="even">
+                    <a href="#article4">Fantasy World Building</a>
+                </article>
+                <article class="odd">
+                    <a href="#article3">Photography</a>
+                </article>
+                <article class="even">
+                    <a href="#article2">Game Dev in Unity</a>
+                </article>
+                <article class="odd">
+                    <a href="#article1">Europe Trip</a>
+                </article>
+            </nav>
+        </div>
+        
+        <section id="blog_grid_container">            
+            
+            <article id="article5" class="blog_grid_element">
+                <img src="../docs/story_doc_pic.jpg" alt="Picture of Magic System Design Doc"/>
+                <h2>Rational Magic Systems</h2>
+                <h3>17th June 2020</h3>
+                <p>
+                    Rational Magic systems are magic systems that make a certain kind of sense. They have rules that can’t be broken, or there are rules for when the rules can be broken! Where the magic comes from, and what can be done with it has to be constrained, it can’t be used to solve problems in the plot at the drop of a hat. I’ve been using this idea to develop a system of magic that fits into a kind of science-fantasy setting, artificial intelligence aided nanomachine stuff, but with wizards! It’s all very silly to be honest but it’s a great way to waste time. 
+                </p>
+            </article>
+            
+            <article id="article4" class="blog_grid_element">
+                <img src="../docs/photos/23.jpg" alt="Photo of Maltese Ruins"/>
+                <h2>Fantasy World Building</h2>
+                <h3>5th June 2020</h3>
+                <p>
+                    I recently started listening to the Mistborn series of books on Audible, and it gave me a new idea for a book that I was trying to write years ago so I thought I’d give it another go. I’ve since gone into the weeds with how the magic and politics of my fictitious world would operate and it’s probably stifled any attempts at prose because I need everything to be worked out before I start writing! Regardless, the process of building a fantasy world in your mind and putting your ideas on paper is a great way to spend your free time if you’ve been doing too much coding!
+                </p>
+            </article>
+            
+            <article id="article3" class="blog_grid_element">
+                <img src="../docs/photos/2.jpg" alt="Photo of Jaffa"/>
+                <h2>Photography</h2>
+                <h3>20th May 2020</h3>
+                <p>
+                    I’ve always been creatively minded, I loved doing origami as a kid and enjoyed sketching, but until my trip to Europe I’d never delved into Photography, but I’m super glad I did.
+                </p>
+                <br>
+                <p>
+                    Just before my trip I went and bought a fairly cheap digital Canon, and over the course of the trip I took hundreds of photos, most of them terrible. But surprisingly some of them came out fairly well, and while I’ll never pretend I’m a great photographer I do seem to have a good sense of framing; getting things in the right spot. That’s what the photography teacher I found in Leiden told me anyway!
+                </p>
+                <br>
+                <p>
+                    If you’d like to see a collection of my best photos please go to the <a href="gallery.html">Gallery</a>.
+                </p>
+            </article>
+            
+            <article id="article2" class="blog_grid_element">
+                <img src="../docs/GameDevScreen.png" alt="Photo of Roguelike Game Project"/>
+                <h2>Game Dev in Unity</h2>
+                <h3>15th Apr 2020</h3>
+                <p>
+                    It was about October 2018 that I decided to try my hand at <a href="gamedev.html">game development</a>, and downloaded Unity. I’d read a few times that game developers are born when a gamer wants to play a game that doesn’t exist yet, and so it went for me.         
+                </p>
+                <br>
+                <p>
+                    The game is intended to be a <a href="https://en.wikipedia.org/wiki/Roguelike">Roguelike</a>, a procedurally generated world that’s different every time, permadeath so when you die you have to start over in a new world, etc; but real-time instead of turn-based, and not on a grid. It will not be dissimilar to the game <a href="https://store.steampowered.com/app/506870/Unexplored/">Unexplored</a> but will play more like a real-time tactics game. I’ve developed a few cool things on the journey, both a dungeon generator and a biome generator, which generates cave systems with rooms and puzzles, and open areas with trees/lakes/rives/caves respectively. I’ve made my own procedural animation system because I couldn’t get my head around Unity’s Mechanim system. I made a procedural mesh generator for the objects in the world that don’t need to be prefabbed. I’ve also made my own modular a* pathfinding system for the AI so that I could easily give them different behaviours in how they manoeuvre toward and around the player. 
+                </p>
+                <br>
+                <p>
+                    Alas, while all this sounds great, the project is currently broken as I messed up transferring the project files from my old windows 7 system to a new windows 10 one, so I have a bit of work to do to get back to where I am in the most recent video on <a href="gamedev.html">this page</a>. But I still have all my old scripts so it shouldn’t take me too long to put everything back together and press on.
+                </p>
+            </article>
+
+            <article id="article1" class="blog_grid_element">
+                <img src="../docs/photos/57.jpg" alt="Photo of Ben"/>
+                
+                <h2>Europe Trip</h2>
+                <h3>23rd Feb 2020</h3>
+                <p>
+                    I’ve talked a lot to friends, family and just about everyone who’ll listen about my little solo trip to Europe but I haven’t actually written anything down. I kinda regret that, would have been cool to look back on a written journal containing my thoughts at the time, and while I did take hundreds of photos chronicling the trip, many of which you can see on my <a href="gallery.html">Gallery</a> page, it’s not quite the same. So I thought I’d start with a short summary of the trip, and in future posts go into each part of the trip in detail, not an exhaustive amount, but the right amount to stretch my writing muscles.
+                </p>
+                <br>
+                <p>
+                    First things first, this was the order of countries and places I went to:
+                </p>
+                <ul>
+                    <li>
+                        Transfer: Guangzhou China
+                    </li>
+                    <li>
+                        Transfer: Amsterdam Netherlands
+                    </li>
+                    <li>
+                        Stayed in Luxembourg then took the train to Amsterdam Netherlands
+                    </li>
+                    <li>
+                        Stayed in Amsterdam then took train to Zwolle
+                    </li>
+                    <li>
+                        Stayed in Zwolle then took train to Leiden
+                    </li>
+                    <li>
+                        Stayed in Leiden then took train all the way down through Brussels then across the channel to London.
+                    </li>
+                    <li>
+                        Stayed in London overnight then flew to Shetland
+                    </li>
+                    <li>
+                        Stayed in Shetland then flew back to London
+                    </li>
+                    <li>
+                        Stayed in London overnight then flew to Malta (I am Maltese on my mother’s side)
+                    </li>
+                    <li>
+                        Stayed in Malta then flew back to the UK, Manchester
+                    </li>
+    
+                    <li>
+                        Stayed in Manchester, took day trips to both Liverpool and Leeds, took train to London
+                    </li>
+                    <li>
+                        Stayed in London (Properly this time) then took train to York
+                    </li>
+                    <li>
+                        Stayed in York for a few days, then flew to Geneva – Switzerland, and immediately took train from Geneva to Brides-Les-Bains
+                    </li>
+                    <li>
+                        Stayed in Brides-Les-Bains for a few days then began the long trip back home to Brisbane.
+                    </li>
+                </ul>
+                <p>In later blog posts I’ll go into more detail about each leg of the trip!</p>
+            </article>
+            
+        </section>    
+        
+        <footer class="home_page_section">
+            <p>
+                <a href="https://www.linkedin.com/in/benjamin-wakefield-569143159/" target="_blank">
+                    <img class="footer_icons" src="../docs/linkedin-128.png" alt="linkedin icon">
+                </a>
+                <a href="https://github.com/asyncronous" target="_blank">
+                    <img class="footer_icons" src="../docs/github-10-128.ico" alt="Github icon">
+                </a>
+                <a href="https://codepen.io/asyncronous" target="_blank">
+                    <img class="footer_icons" src="../docs/codepen-128.png" alt="Codepen icon">
+                </a>
+                <a href="https://twitter.com/Asyncronous14" target="_blank">
+                    <img class="footer_icons" src="../docs/twitter-5-128.ico" alt="Twitter icon">
+                </a>
+                <a href="https://www.instagram.com/bentropy.wake/" target="_blank">
+                    <img class="footer_icons" src="../docs/instagram-5-128.ico" alt="instagram icon">
+                </a>
+                <a href="mailto:bwakefield34@gmail.com" target="_blank">
+                    <img class="footer_icons" src="../docs/gmail-128.png" alt="gmail icon">
+                </a>
+            </p>
+
+            <h6>Benjamin Wakefield; © <br>
+                <span>Background PNG from <a href="https://www.nextpng.com/en/transparent-png-nnmvv">NextPNG.com</a></span>
+            </h6>
+            
+        </footer>
+    </div>
+
+    <script>               
+        var x = window.matchMedia("(min-width: 421px)");
+        widthCheck(x)
+        x.addListener(widthCheck);
+
+        var y = window.matchMedia("(max-width: 420px)");
+        widthCheck2(y)
+        y.addListener(widthCheck2);
+
+        function menuHide() {
+          var x = document.getElementById("hide");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            }
+
+            else{
+                x.style.display = "flex";
+            }          
+        }
+
+        function menuHide2() {
+          var x = document.getElementById("hide_blog");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            }
+
+            else{
+                x.style.display = "flex";
+            }          
+        }
+
+        //moving to larger display
+        function widthCheck(x) {
+            var z = document.getElementById("hide");
+            if (x.matches) {
+                z.style.display = "flex";
+            }
+        }
+
+        //moving to smaller display
+        function widthCheck2(y) {
+            var z = document.getElementById("hide");
+            if (y.matches && z.style.display === "none") {
+                menuHide()
+            }
+            if (y.matches && z.style.display === "flex") {
+                z.style.display = "none";
+            }
+        }
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>🎮 Game Dev</title>
+</head>
+<body>
+    <div id="page_container">
+        <header>
+            <div id="scroll_header">
+                <p>Benjamin Wakefield;</p>
+            </div>
+            <p>_______________________________________</p>
+            <section class="header_section">
+                <a id="hide_button" href="javascript:void(0);" class="icon" onclick="menuHide()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <nav id="hide">
+                    <a class="even" href="index.html">Home</a>
+                    <a class="odd" href="about.html">About</a>
+                    <a class="even" href="blog.html">Blog</a>
+                    <a class="odd" href="gallery.html">Gallery</a>
+                    <a class="even" href="gamedev.html">Game Dev</a>
+                    <a class="odd" href="contact.html">Contact Me</a>                     
+                </nav>
+            </section>  
+        </header>       
+
+        <section class="heading">
+            <h1>Game Dev</h1>
+        </section>
+        <div id="smallhex1">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div>
+        <div id="smallhex2">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div> 
+        <div id="smallhex3">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div> 
+        <div id="smallhex4">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div>    
+        <div id="medhex1">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div>
+        <div id="medhex2">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div> 
+        <div id="medhex3">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div> 
+        <div id="medhex4">
+            <img src="../docs/background_hex.png" alt="hex"/>
+        </div>   
+        <section id="gamedev_grid_container">            
+            <article id="project_para" class="gamedev_grid_element">
+                <h3>Project Summary</h3>
+                <p>
+                    On this page you will find a history of my as yet unnamed Roguelike project that I've been developing over the better half of 2 years in Unity. Please read the blog post <a href="./blog.html">here</a> for a more detailed rundown of the project.
+                </p>
+
+            </article>
+
+            <article class="gamedev_grid_element">
+                <video autoplay loop src="../docs/videos/1CaveShadowmp4.mp4" alt="Video showing Caves that have transparent roofs that cast shadows"></video>
+            </article>
+
+            <article class="gamedev_grid_element">
+                <video autoplay loop src="../docs/videos/2BranchesGenmp4.mp4" alt="Video showing new branches sprite on trees"></video>
+            </article>
+
+            <article class="gamedev_grid_element">
+                <video autoplay loop src="../docs/videos/3ForestGenmp4.mp4" alt="Video showing generation of tree meshes with random orientation"></video>
+            </article>
+
+            <article class="gamedev_grid_element">
+                <video autoplay loop src="../docs/videos/4ProceduralAnimmp4.mp4" alt="Video showing procedural animation of player character"></video>
+            </article>
+
+            <article class="gamedev_grid_element">
+                <video autoplay loop src="../docs/videos/5DungeonGenFixedRatio.mp4" alt="Video showing example of Mesh generation for dungeon level"></video>
+            </article>
+
+            <article class="gamedev_grid_element">
+                <video autoplay loop src="../docs/videos/6ControllerFixedRatio.mp4" alt="Video showing early iteration of PID player look controller"></video>
+            </article>
+
+            <article class="gamedev_grid_element">
+                <video autoplay loop src="../docs/videos/7RandomWalkCaveFixedRatio.mp4" alt="Video showing early iteration cave generation with Random Walk"></video>
+            </article>
+        </section>    
+
+        <footer class="home_page_section">
+            <p>
+                <a href="https://www.linkedin.com/in/benjamin-wakefield-569143159/" target="_blank">
+                    <img class="footer_icons" src="../docs/linkedin-128.png" alt="linkedin icon">
+                </a>
+                <a href="https://github.com/asyncronous" target="_blank">
+                    <img class="footer_icons" src="../docs/github-10-128.ico" alt="Github icon">
+                </a>
+                <a href="https://codepen.io/asyncronous" target="_blank">
+                    <img class="footer_icons" src="../docs/codepen-128.png" alt="Codepen icon">
+                </a>
+                <a href="https://twitter.com/Asyncronous14" target="_blank">
+                    <img class="footer_icons" src="../docs/twitter-5-128.ico" alt="Twitter icon">
+                </a>
+                <a href="https://www.instagram.com/bentropy.wake/" target="_blank">
+                    <img class="footer_icons" src="../docs/instagram-5-128.ico" alt="instagram icon">
+                </a>
+                <a href="mailto:bwakefield34@gmail.com" target="_blank">
+                    <img class="footer_icons" src="../docs/gmail-128.png" alt="gmail icon">
+                </a>
+            </p>
+
+            <h6>Benjamin Wakefield; © <br>
+                <span>Background PNG from <a href="https://www.nextpng.com/en/transparent-png-nnmvv">NextPNG.com</a></span>
+            </h6>
+            
+        </footer>
+    </div>
+    <script>               
+        var x = window.matchMedia("(min-width: 421px)");
+        widthCheck(x)
+        x.addListener(widthCheck);
+
+        var y = window.matchMedia("(max-width: 420px)");
+        widthCheck2(y)
+        y.addListener(widthCheck2);
+
+        // var x1 = document.getElementsByClassName("container");
+        // var zz = document.getElementsByClassName("heading");
+
+        function menuHide() {
+          var x = document.getElementById("hide");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            }
+
+            else{
+                x.style.display = "flex";
+            }          
+        }
+
+        //moving to larger display
+        function widthCheck(x) {
+            var z = document.getElementById("hide");
+            if (x.matches) {
+                z.style.display = "flex";
+            }
+        }
+
+        //moving to smaller display
+        function widthCheck2(y) {
+            var z = document.getElementById("hide");
+            if (y.matches && z.style.display === "none") {
+                menuHide()
+            }
+            if (y.matches && z.style.display === "flex") {
+                z.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
