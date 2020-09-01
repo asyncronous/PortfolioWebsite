@@ -860,6 +860,12 @@ li{
         margin-left: 10vw;
         margin-right: 10vw;
     }
+
+    #gallery_grid_container{
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
 }
 
 //Tablet to Desktop Breakpoints
