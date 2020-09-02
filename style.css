@@ -7,7 +7,7 @@
   font-family: "Roboto Mono", Arial, monospace; }
 
 body {
-  background: radial-gradient(transparent 0%, black 95%), url("/docs/background-image.png"), repeating-linear-gradient(-45deg, #8d8d9283 5px, #8d8d9283 5px, #36413E 10px, #36413E 10px);
+  background: radial-gradient(transparent 0%, black 95%), url("docs/background-image.png"), repeating-linear-gradient(-45deg, #8d8d9283 5px, #8d8d9283 5px, #36413E 10px, #36413E 10px);
   background-size: 200vw 200vw;
   background-position-x: -150px;
   background-position-y: -50px;
@@ -313,7 +313,7 @@ footer {
   text-shadow: 2px 2px 2px black; }
 
 #headshot_container {
-  background: radial-gradient(transparent 0%, black 95%), url("/docs/Headshot.jpg");
+  background: radial-gradient(transparent 0%, black 95%), url("docs/Headshot.jpg");
   background-size: 300px 300px;
   display: flex;
   align-items: center;
