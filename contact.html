@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>📞 Contact Me</title>
+</head>
+<body>
+    <div id="page_container">
+        <header>
+            <div id="scroll_header">
+                <p>Benjamin Wakefield;</p>
+            </div>
+            <p>_______________________________________</p>
+            <section class="header_section">
+                <a id="hide_button" href="javascript:void(0);" class="icon" onclick="menuHide()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <nav id="hide">
+                    <a class="even" href="index.html">Home</a>
+                    <a class="odd" href="about.html">About</a>
+                    <a class="even" href="blog.html">Blog</a>
+                    <a class="odd" href="gallery.html">Gallery</a>
+                    <a class="even" href="gamedev.html">Game Dev</a>
+                    <a class="odd" href="contact.html">Contact Me</a>                     
+                </nav>
+            </section>  
+        </header>     
+        
+        <section class="heading">
+            <h1>Contact Me</h1>
+        </section>
+        <div id="smallhex1">
+            <img src="../docs/background_hex.png"/>
+        </div>
+        <div id="smallhex2">
+            <img src="../docs/background_hex.png"/>
+        </div> 
+        <div id="smallhex3">
+            <img src="../docs/background_hex.png"/>
+        </div> 
+        <div id="smallhex4">
+            <img src="../docs/background_hex.png"/>
+        </div>    
+        <div id="medhex1">
+            <img src="../docs/background_hex.png"/>
+        </div>
+        <div id="medhex2">
+            <img src="../docs/background_hex.png"/>
+        </div> 
+        <div id="medhex3">
+            <img src="../docs/background_hex.png"/>
+        </div> 
+        <div id="medhex4">
+            <img src="../docs/background_hex.png"/>
+        </div>    
+        <section id="contact_element_container">
+            <article id="contact_element">
+                <h2>Send an email!</h2>
+                <br>
+                <form action="mailto:bwakefield34@gmail.com" method="post" enctype="text/plain">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="mail"><br>
+                    <label for="comments">Comments:</label><br><br>
+                    <textarea id="comments" name="comment" rows="5" cols="20">Comment Here!</textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+        </section>    
+        <br>
+        <section class="footing">
+            <h1>Or Click One Of These <br>
+                <i class="fa fa-caret-down"></i>
+            </h1>
+        </section>
+        <br>
+        <footer class="home_page_section">
+            <p>
+                <a href="https://www.linkedin.com/in/benjamin-wakefield-569143159/" target="_blank">
+                    <img class="footer_icons" src="../docs/linkedin-128.png" alt="linkedin icon">
+                </a>
+                <a href="https://github.com/asyncronous" target="_blank">
+                    <img class="footer_icons" src="../docs/github-10-128.ico" alt="Github icon">
+                </a>
+                <a href="https://codepen.io/asyncronous" target="_blank">
+                    <img class="footer_icons" src="../docs/codepen-128.png" alt="Codepen icon">
+                </a>
+                <a href="https://twitter.com/Asyncronous14" target="_blank">
+                    <img class="footer_icons" src="../docs/twitter-5-128.ico" alt="Twitter icon">
+                </a>
+                <a href="https://www.instagram.com/bentropy.wake/" target="_blank">
+                    <img class="footer_icons" src="../docs/instagram-5-128.ico" alt="instagram icon">
+                </a>
+                <a href="mailto:bwakefield34@gmail.com" target="_blank">
+                    <img class="footer_icons" src="../docs/gmail-128.png" alt="gmail icon">
+                </a>
+            </p>
+
+            <h6>Benjamin Wakefield; © <br>
+                <span>Background PNG from <a href="https://www.nextpng.com/en/transparent-png-nnmvv">NextPNG.com</a></span>
+            </h6>
+            
+        </footer>
+    </div>
+    <script>               
+        var x = window.matchMedia("(min-width: 421px)");
+        widthCheck(x)
+        x.addListener(widthCheck);
+
+        var y = window.matchMedia("(max-width: 420px)");
+        widthCheck2(y)
+        y.addListener(widthCheck2);
+
+        // var x1 = document.getElementsByClassName("container");
+        // var zz = document.getElementsByClassName("heading");
+
+        function menuHide() {
+          var x = document.getElementById("hide");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            }
+
+            else{
+                x.style.display = "flex";
+            }          
+        }
+
+        //moving to larger display
+        function widthCheck(x) {
+            var z = document.getElementById("hide");
+            if (x.matches) {
+                z.style.display = "flex";
+            }
+        }
+
+        //moving to smaller display
+        function widthCheck2(y) {
+            var z = document.getElementById("hide");
+            if (y.matches && z.style.display === "none") {
+                menuHide()
+            }
+            if (y.matches && z.style.display === "flex") {
+                z.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
