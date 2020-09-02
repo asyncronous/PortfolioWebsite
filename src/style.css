@@ -372,6 +372,9 @@ footer {
   .about_me_grid_element p {
     color: #BEB2C8;
     font-size: 15px; }
+  .about_me_grid_element a {
+    color: #D7D6D6;
+    font-size: 15px; }
   .about_me_grid_element h2 {
     color: #D7D6D6;
     font-size: 25px; }
@@ -516,6 +519,9 @@ li {
     border: solid 3px #BEB2C8; }
   .gallery_grid_element p {
     color: #BEB2C8;
+    font-size: 16px; }
+  .gallery_grid_element a {
+    color: #D7D6D6;
     font-size: 16px; }
   .gallery_grid_element h2 {
     color: #D7D6D6;

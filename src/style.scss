@@ -493,11 +493,15 @@ footer{
         font-size: 15px;
     }
 
+    a{
+        color: $_1color;
+        font-size: 15px;
+    }
+
     h2{
         color: $_1color;
         font-size: 25px;
-    }
-    
+    }    
 }
 
 ul{
@@ -713,6 +717,11 @@ li{
 
     p{
         color: $_2color;
+        font-size: 16px;
+    }
+
+    a{
+        color: $_1color;
         font-size: 16px;
     }
 
