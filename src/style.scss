@@ -787,6 +787,7 @@ li{
 #contact_element_container{
     display:flex;
     justify-content: center;
+    // flex-direction: column;
     margin: 10px;
     margin-left: 25%;
 }
@@ -833,6 +834,8 @@ li{
 }
 
 .footing{
+    display: flex;
+    justify-content: center;
     text-align: center;
     z-index: 2;
     margin-top: 20px;
@@ -848,6 +851,8 @@ li{
 //---------------------//
 //--Media Breakpoints--//
 //---------------------//
+
+//Extra Large Display Breakpoints
 @media screen and (min-width: 1200px){
     #container_id{
         grid-template-columns: repeat(2, 1fr);
@@ -976,9 +981,5 @@ li{
     #box{
         top: 27px;
         right: 60px;
-
-        nav{
-
-        }
     }
 }

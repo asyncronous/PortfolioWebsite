@@ -596,6 +596,8 @@ li {
     width: 98%; }
 
 .footing {
+  display: flex;
+  justify-content: center;
   text-align: center;
   z-index: 2;
   margin-top: 20px;
