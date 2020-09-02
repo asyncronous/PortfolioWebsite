@@ -26,7 +26,7 @@ $_5colorspecial : #36413e8a;
 body{
     background: 
         radial-gradient(transparent 0%, black 95%),
-        url("docs/background-image.png"),
+        url("./docs/background-image.png"),
         repeating-linear-gradient(-45deg, $_3colorspecial 5px, $_3colorspecial 5px, $_5color 10px, $_5color 10px);
     background-size: 200vw 200vw;
     background-position-x: -150px;
@@ -415,7 +415,7 @@ footer{
 #headshot_container{
     background: 
         radial-gradient(transparent 0%, black 95%),
-        url("docs/Headshot.jpg");
+        url("./docs/Headshot.jpg");
     background-size: 300px 300px;
     display:flex;
     align-items: center;
