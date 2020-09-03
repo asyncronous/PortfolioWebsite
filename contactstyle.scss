@@ -1,0 +1,76 @@
+//----------------//
+//--Contact Page--//
+//----------------//
+
+// colours used throughout the document
+$_1color : #D7D6D6;
+$_2color : #BEB2C8;
+$_3color : #8D8D92;
+$_3colorspecial : #8d8d9283;
+$_4color : #5D5E60;
+$_5color : #36413E;
+$_5colorspecial : #36413e8a;
+
+#contact_element_container{
+    display:flex;
+    justify-content: center;
+    // flex-direction: column;
+    margin: 10px;
+    margin-left: 25%;
+}
+
+#contact_element{
+    background: $_5colorspecial;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 100%;
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    label{
+        font-size: 16px;
+    }
+
+    h2{
+        color: $_1color;
+        font-size: 23px;
+    }
+
+    input{
+        color: $_2color;
+        font-size: 16px;
+        background: $_4color;
+        padding: 3px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    textarea{
+        background: $_4color;
+        color: $_1color;
+        font-size: 16px;
+        margin: 5px;
+        border-radius: 5px;
+        border:solid $_2color;
+        padding: 3px;
+        width: 98%
+    }
+}
+
+.footing{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    min-height: 10vh;
+
+    h1{
+        font-size: 25px;
+        color: $_2color;
+    }
+}

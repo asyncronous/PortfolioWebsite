@@ -1,0 +1,55 @@
+#homepage_element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  text-shadow: 2px 2px 2px black; }
+
+#headshot_container {
+  background: radial-gradient(transparent 0%, black 95%), url("./docs/Headshot.jpg");
+  background-size: 300px 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: solid black 5px; }
+
+#heading1 {
+  font-size: 2em;
+  position: relative;
+  bottom: 55px;
+  right: 20px;
+  z-index: 2; }
+
+#heading2 {
+  color: #BEB2C8;
+  font-weight: 500;
+  font-size: 1.8em;
+  position: relative;
+  bottom: 50px;
+  left: 20px;
+  z-index: 2; }
+
+#heading3 {
+  color: #D7D6D6;
+  font-weight: 400;
+  font-size: 1.6em;
+  position: relative;
+  bottom: 40px;
+  left: 10px;
+  z-index: 2; }
+
+#heading4 {
+  color: #BEB2C8;
+  font-weight: 300;
+  font-size: 1.4em;
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+  z-index: 2; }
+
+/*# sourceMappingURL=homestyle.css.map */

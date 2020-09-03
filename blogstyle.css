@@ -1,0 +1,94 @@
+#box {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  position: fixed;
+  z-index: 5; }
+  #box .blog_header_section {
+    display: flex; }
+    #box .blog_header_section .icon {
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+      margin: 5px;
+      background-color: #8D8D92;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 5px;
+      border: solid 3px #BEB2C8; }
+      #box .blog_header_section .icon i {
+        color: #D7D6D6;
+        font-size: 2em; }
+    #box .blog_header_section .icon:hover {
+      background-color: #BEB2C8;
+      border: solid 3px #D7D6D6; }
+      #box .blog_header_section .icon:hover i {
+        color: #36413E;
+        font-size: 2em; }
+  #box nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-top: 5px; }
+    #box nav article {
+      width: 100%;
+      padding: 8px;
+      align-items: center;
+      justify-content: center; }
+      #box nav article a {
+        font-size: 1.2em;
+        font-weight: 1000; }
+    #box nav .odd {
+      background: #D7D6D6; }
+      #box nav .odd a {
+        color: #36413E; }
+    #box nav .odd:hover {
+      background: #BEB2C8; }
+      #box nav .odd:hover a {
+        color: #36413E; }
+    #box nav .even {
+      background: #36413E; }
+      #box nav .even a {
+        color: #D7D6D6; }
+    #box nav .even:hover {
+      background: #BEB2C8; }
+      #box nav .even:hover a {
+        color: #36413E; }
+
+#blog_grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  margin-left: 30%;
+  margin-right: 5%;
+  margin-bottom: 25px;
+  border-radius: 15px; }
+
+.blog_grid_element {
+  background: #36413e8a;
+  padding: 15px;
+  border-radius: 15px; }
+  .blog_grid_element img {
+    max-width: 200px;
+    border-radius: 15px;
+    border: solid 3px #BEB2C8; }
+  .blog_grid_element a {
+    color: #D7D6D6;
+    font-size: 16px; }
+  .blog_grid_element p {
+    color: #BEB2C8;
+    font-size: 16px; }
+  .blog_grid_element h2 {
+    color: #D7D6D6;
+    font-size: 25px; }
+  .blog_grid_element h3 {
+    color: #D7D6D6;
+    font-size: 20px; }
+
+/*# sourceMappingURL=blogstyle.css.map */

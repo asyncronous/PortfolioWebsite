@@ -1,0 +1,49 @@
+#contact_element_container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  margin-left: 25%; }
+
+#contact_element {
+  background: #36413e8a;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 100%; }
+  #contact_element form {
+    display: flex;
+    flex-direction: column; }
+  #contact_element label {
+    font-size: 16px; }
+  #contact_element h2 {
+    color: #D7D6D6;
+    font-size: 23px; }
+  #contact_element input {
+    color: #BEB2C8;
+    font-size: 16px;
+    background: #5D5E60;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 10px; }
+  #contact_element textarea {
+    background: #5D5E60;
+    color: #D7D6D6;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+    border: solid #BEB2C8;
+    padding: 3px;
+    width: 98%; }
+
+.footing {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  min-height: 10vh; }
+  .footing h1 {
+    font-size: 25px;
+    color: #BEB2C8; }
+
+/*# sourceMappingURL=contactstyle.css.map */

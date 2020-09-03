@@ -1,0 +1,87 @@
+//-----------------//
+//--About me page--//
+//-----------------//
+
+// colours used throughout the document
+$_1color : #D7D6D6;
+$_2color : #BEB2C8;
+$_3color : #8D8D92;
+$_3colorspecial : #8d8d9283;
+$_4color : #5D5E60;
+$_5color : #36413E;
+$_5colorspecial : #36413e8a;
+
+//container for my grid elements on the about page, calculated so that its only 1 or only 2 columns exactly
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(20vw + 150px), 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    // margin-left: 30%;
+    margin-right: 5%;
+    margin-bottom: 25px;    
+    
+}
+
+//elements for above container
+.about_me_grid_element{
+    background: $_5colorspecial;
+    padding: 10px;
+    // max-width: 700px;
+    border-radius: 15px;
+
+    p{
+        color: $_2color;
+        font-size: 15px;
+    }
+
+    a{
+        color: $_1color;
+        font-size: 15px;
+    }
+
+    h2{
+        color: $_1color;
+        font-size: 25px;
+    }    
+}
+
+ul{
+    padding: 20px;
+}
+
+li{
+    color: $_2color;
+    font-size: 15px;
+}
+
+//special id for resume section on about page
+#resume{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+    h3{
+        background: $_3colorspecial;
+        border: solid 3px $_3color;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        
+        a{
+            font-size: 23px;
+            color: $_2color;
+            text-decoration: underline;
+        }
+    }
+
+    h3:hover{
+        background: $_2color;
+        border: solid 3px $_3color;
+        
+        a{
+            color: $_5colorspecial;
+        }
+    }
+
+}

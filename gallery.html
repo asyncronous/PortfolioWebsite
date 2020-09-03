@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" integrity="sha512-V4UjdUGaiWQDHXfQC7yfcx+eAFFDHwgt52zhRBSOYdjyFJqz4z0onkdHwKlysyvISezD96AlkkEg5U8mkIpPPg=="/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" integrity="sha512-4Ysy7v+oJ1+4tN+owXN9052CmqPxgYm8nEmtACMSzMTlGimM52sT+C9p4jCyZ35M9T5c2fx6OxJTeQr9TkWBVw=="/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="/>
+    <link rel="stylesheet" href="gallerystyle.css" integrity="sha512-Mvv9nGETKJmeYl1Ljc8/e5awG+dM7dkWwUIvax6IIncZTIfIM7UJqBCJ/beDoWpgoBaiIRN6mh9sjVvSLotGcg== sha384-x6upCUreGILxLKgdsrTyYr9JpXPKcuKUuNWAG2tWt1vooLnQplefgjGukwsOgXKC"/>
+    <link rel="stylesheet" href="basestyle.css" integrity="sha512-RQhgD8AoMfHkhpAji/BZA2f6omghPZhRBYZdbflVRR+N2hOao+GET+4pdA3/mUxmX0Qk+fPt29RpWJURYI6WWw== sha384-Zo/T6gNQSMRYNd0lfGGLHzc4f1jGtxulx8HhLioD2hbe8s5asWYs9P1TXHmz0yFP"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw== sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
     <title>📷 Gallery</title>
 </head>
 <body>
@@ -539,47 +539,6 @@
             
         </footer>
     </div>
-    <script>               
-        var x = window.matchMedia("(min-width: 421px)");
-        widthCheck(x)
-        x.addListener(widthCheck);
-
-        var y = window.matchMedia("(max-width: 420px)");
-        widthCheck2(y)
-        y.addListener(widthCheck2);
-
-        // var x1 = document.getElementsByClassName("container");
-        // var zz = document.getElementsByClassName("heading");
-
-        function menuHide() {
-          var x = document.getElementById("hide");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            }
-
-            else{
-                x.style.display = "flex";
-            }          
-        }
-
-        //moving to larger display
-        function widthCheck(x) {
-            var z = document.getElementById("hide");
-            if (x.matches) {
-                z.style.display = "flex";
-            }
-        }
-
-        //moving to smaller display
-        function widthCheck2(y) {
-            var z = document.getElementById("hide");
-            if (y.matches && z.style.display === "none") {
-                menuHide()
-            }
-            if (y.matches && z.style.display === "flex") {
-                z.style.display = "none";
-            }
-        }
-    </script>
+    <script type="text/javascript" src="script.js" integrity="sha512-JFO60Qq6c9yhVxgMKY78eUhXqzGMZ0fJ/B03VUhnm5odAYXryRgp+KUTAOuUTwNf40s1g3VXEBA7RCdJ4qfiVw== sha384-c1p1oh2vj++ee256mtMVsj5NbrTnouXUH31jU4fIz3eRTLWbCRfyMi+B5b2751fR"></script>
 </body>
 </html>

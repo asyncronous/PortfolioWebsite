@@ -1,0 +1,77 @@
+//---------------------//
+//------Home-Page------//
+//---------------------//
+
+// colours used throughout the document
+$_1color : #D7D6D6;
+$_2color : #BEB2C8;
+$_3color : #8D8D92;
+$_3colorspecial : #8d8d9283;
+$_4color : #5D5E60;
+$_5color : #36413E;
+$_5colorspecial : #36413e8a;
+
+// container for all the headings on the homepage
+#homepage_element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    text-shadow: 2px 2px 2px black;
+}
+
+//container for my photo on the home page, has a vignette and my photo, resized to get the right effect
+#headshot_container{
+    background: 
+        radial-gradient(transparent 0%, black 95%),
+        url("./docs/Headshot.jpg");
+    background-size: 300px 300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: solid black 5px
+}
+
+//each heading is moved around a bit for effect with position relative, and z-indexed to make sure its in front
+#heading1{
+    font-size: 2em;
+    position: relative;
+    bottom: 55px;
+    right: 20px;
+    z-index: 2;
+}
+
+#heading2{
+    color: $_2color;
+    font-weight: 500;
+    font-size: 1.8em;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+    z-index: 2;
+}
+
+#heading3{
+    color: $_1color;
+    font-weight: 400;
+    font-size: 1.6em;
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    z-index: 2;
+}
+
+#heading4{
+    color: $_2color;
+    font-weight: 300;
+    font-size: 1.4em;
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+    z-index: 2;
+}
